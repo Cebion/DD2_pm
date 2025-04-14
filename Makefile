@@ -16,7 +16,7 @@ SHELL = /bin/sh
 
 srcdir = .
 top_srcdir = .
-prefix = /usr/local
+prefix = .
 exec_prefix = ${prefix}
 
 bindir = ${exec_prefix}/bin
@@ -58,11 +58,11 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 CC = gcc
-MAKEINFO = /media/Data/Technology/Cell_Phone/Pre/Program Source/DD2/dd2-0.2.2/missing makeinfo
+MAKEINFO = /root/compile/DD2/missing makeinfo
 PACKAGE = dd2
 SDL_CFLAGS = -I/usr/include/SDL -D_GNU_SOURCE=1 -D_REENTRANT
 SDL_CONFIG = /usr/bin/sdl-config
-SDL_LIBS = -lSDL -lpthread
+SDL_LIBS = -L/usr/lib/aarch64-linux-gnu -lSDL
 VERSION = 0.2.2
 
 SUBDIRS = src

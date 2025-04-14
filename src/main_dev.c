@@ -65,12 +65,12 @@ soundLoad()
     int i;
     char buffer[512];
 
-	sprintf(buffer,"%s/bgm1.wav",DD2_DATA); //"%s/bgm1.xm"
+	sprintf(buffer,"%s/bgm1.xm",DD2_DATA); //"%s/bgm1.xm"
 	bgm=Mix_LoadMUS(buffer);
 	if(!bgm)
 		fprintf(stderr,"Unable load bgm: %s\n", SDL_GetError());
 
-	sprintf(buffer,"%s/bgm2.wav",DD2_DATA);
+	sprintf(buffer,"%s/bgm2.xm",DD2_DATA);
 	bgm_boss=Mix_LoadMUS(buffer);
 	if(!bgm_boss)
 		fprintf(stderr,"Unable load bgm_boss: %s\n", SDL_GetError());
