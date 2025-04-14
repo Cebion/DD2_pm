@@ -93,10 +93,10 @@ engine_init()
 		player[0].nf=2;
 		/* player[0].joy=0; */
 
-		player[0].keys[0]=SDLK_e;//SDLK_LEFT;
-		player[0].keys[1]=SDLK_x;//SDLK_RIGHT;
-		player[0].keys[2]=SDLK_f;//SDLK_UP;
-		player[0].keys[3]=SDLK_d;//SDLK_DOWN;
+		player[0].keys[0]=SDLK_LEFT;  // Left
+		player[0].keys[1]=SDLK_RIGHT; // Right
+		player[0].keys[2]=SDLK_UP;    // Up
+		player[0].keys[3]=SDLK_DOWN;  // Down
 		player[0].keys[4]=SDLK_s;//SDLK_RCTRL
 /*#ifndef ALT_FIRE
 		player[0].keys[4]=SDLK_o;//SDLK_RCTRL
